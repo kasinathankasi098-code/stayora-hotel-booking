@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  color-scheme: light;
+  --text: #18384a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Helvetica, Avenir, Arial, sans-serif;
+  background: #f1f9ff;
+  color: var(--text);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Bodoni MT", Didot, "Times New Roman", serif;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  font-family: Futura, "Century Gothic", Arial, sans-serif;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}

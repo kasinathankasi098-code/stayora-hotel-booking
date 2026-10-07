@@ -1,0 +1,29 @@
+{
+  "name": "stayora-hotel-booking-app",
+  "version": "1.0.0",
+  "description": "Fullstack Hotel Booking Application with React Frontend and Node.js/PostgreSQL/Express Backend",
+  "scripts": {
+    "dev": "concurrently -n \"backend,frontend\" -c \"blue,green\" \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "npm --prefix backend run dev",
+    "start:backend": "npm --prefix backend start",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "build:frontend": "npm --prefix frontend run build",
+    "migrate": "npm --prefix backend run migrate",
+    "seed": "npm --prefix backend run seed",
+    "test:api": "npm --prefix backend run test:api",
+    "clean:ports": "powershell -Command \"Get-NetTCPConnection -LocalPort 5000, 5173 -ErrorAction SilentlyContinue | ForEach-Object { Stop-Process -Id $_.OwningProcess -Force -ErrorAction SilentlyContinue }\""
+  },
+  "keywords": [
+    "hotel-booking",
+    "react",
+    "express",
+    "postgresql",
+    "nodejs",
+    "crud"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^10.0.5"
+  }
+}
